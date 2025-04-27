@@ -6,12 +6,11 @@ export default function Home() {
     <div className="home-page">
       <div 
         className="hero-image"
-        style={{
-          backgroundImage: `url(${backgroundHero})`
-        }}
+        style={{ backgroundImage: `url(${backgroundHero})` }}
       >
+        <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Bienvenido a HeranDoc</h1>
+          <h1>Bienvenido a HeránDoc</h1>
           <p>Formación para el desarrollo web</p>
         </div>
       </div>
