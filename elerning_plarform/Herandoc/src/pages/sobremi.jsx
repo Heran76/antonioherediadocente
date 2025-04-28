@@ -2,7 +2,7 @@ import '../styles/sobre-mi.css';
 
 export default function SobreMi() {
   return (
-    <div className="sobre-mi-page">
+    <div className="sobre-mipage">
       <div className="sobre-mi-background"></div>
       <div className="sobre-mi-content">
         <section className="bio-section">
