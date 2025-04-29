@@ -9,7 +9,7 @@ export default function SobreMi() {
           <h1>¿Quién soy?</h1>
           <div className="bio-text">
             <p>
-              Hola, soy Antonio Heredia, docente especializado en formación profesional 
+              Hola, soy Antonio_Heredia, docente especializado en formación profesional 
               para adultos con más de 10 años de experiencia en desarrollo web y enseñanza.
             </p>
             <p>
