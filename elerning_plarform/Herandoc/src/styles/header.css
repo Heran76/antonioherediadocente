@@ -20,7 +20,7 @@
   }
   
   .main-nav a {
-    color: rgb(130, 130, 130);
+    color: rgb(236, 234, 234);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -29,5 +29,5 @@
   
   .main-nav a:hover {
     text-decoration: underline;
-    color:aliceblue;
+    color:rgb(22, 23, 23);
   }
