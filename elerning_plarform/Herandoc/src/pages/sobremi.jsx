@@ -8,6 +8,7 @@ export default function SobreMi() {
         <section className="bio-section">
           <h1>¿Quién soy?</h1>
           <div className="bio-text">
+             <img src=''></img>
             <p>
               Hola, soy Antonio_Heredia, docente especializado en formación profesional 
               para adultos con más de 10 años de experiencia en desarrollo web y enseñanza.

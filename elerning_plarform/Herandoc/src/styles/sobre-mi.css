@@ -4,28 +4,18 @@
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
-  color: #4c4b4b;
-}
-
-.sobre-mi-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(231, 225, 225, 0) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(235, 233, 233, 0.025) 50%);
+  color: #535151ef;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.542) 0%, rgba(231, 225, 225, 0.759) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(246, 243, 243, 0.025) 50%);
  
-}
+  
 }
 
 .sobre-mi-content {
-  width: 99%;
-  max-width: 100%;
-  background: linear-gradient(135deg, #2525297c 0%, #ffffff 100%);
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(4, 4, 4, 0.1);
-  margin: 100px auto;
+  width: 100;
+  max-width: 100;
+ 
+  margin: 90px 90px;
+  
 }
 
 /* TUS ESTILOS EXACTOS (sin modificar) */
