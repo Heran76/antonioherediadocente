@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header className="main-header">
+    
       <nav className="main-nav">
         <Link to="/">Inicio</Link>
         <Link to="/academia">Academia</Link>

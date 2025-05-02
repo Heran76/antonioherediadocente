@@ -1,102 +1,233 @@
-/* ESTILOS COMPLETOS - FONDO FULLSCREEN */
-.sobre-mipage { /* Nota: Nombre exacto como en tu JSX (sin guión) */
+/* Variables de diseño futurista */
+:root {
+  --neon-primary: #fafafa;
+  --neon-secondary: #d46c8d;
+  --dark-bg: #0d0221;
+  --card-bg: rgba(3, 14, 57, 0.8);
+  --text-glow: 0 0 10px #fff, 0 0 20px #fff;
+  --fondo:linear-gradient(to bottom, rgba(255, 255, 255, 0.542) 0%, rgba(231, 225, 225, 0.759) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(246, 243, 243, 0.025) 50%);
+ 
+hr{
+  width: 100%;
+}
+
+/* Reset y estilos base */
+* {
+  box-sizing: border-box;
+ 
+}
+
+/* Contenedor principal */
+.sobre-mi-page {
+  
+  background: var(--fondo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  color: #535151ef;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.542) 0%, rgba(231, 225, 225, 0.759) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(246, 243, 243, 0.025) 50%);
+  padding: 2rem;
+}
+
+/* Contenedor de contenido centrado */
+.sobre-mi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Efecto de imagen holográfica */
+.avatar-img {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  display: block;
+  border: 3px solid var(--fondo);
+
+}
+
+/* Títulos centrados con efecto neón */
+.sobre-mi-container h1,
+.sobre-mi-container h2 {
  
+  text-shadow: var(--text-glow);
+  margin: 1.5rem 0;
+  text-align: center;
   
 }
 
-.sobre-mi-content {
-  width: 100;
-  max-width: 100;
- 
-  margin: 90px 90px;
-  
+.sobre-mi-container h1 {
+  font-size: 2.5rem;
 }
 
-/* TUS ESTILOS EXACTOS (sin modificar) */
-h1 {
-  font-size: 2.8rem;
-  color: #515a6c;
-  text-align: center;
-  margin-bottom: 2rem;
+.sobre-mi-container h2 {
+  font-size: 2rem;
 }
 
-h2 {
-  font-size: 2.2rem;
-  color: #4a4d53;
-  text-align: center;
-  margin: 3rem 0 2rem;
-}
-
+/* Texto de biografía */
 .bio-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: center;
+ line-height: 1.8;
+  color: #353537;
+  margin-bottom: 3rem;
+ text-align: justify;
   max-width: 800px;
-  margin: 0 auto 3rem;
+  padding: 0 1rem;
 }
 
-.bio-text p {
-  margin-bottom: 1.5rem;
+/* Sección de experiencia */
+.experiencia-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Grid de tarjetas con efecto de consola */
 .experiencia-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  perspective: 1000px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
+/* Tarjetas con efecto de interfaz holográfica */
 .experiencia-card {
-  background: rgb(235, 237, 239);
+  background: var(--card-bg);
+  border: 1px solid var(--neon-primary);
+  border-radius: 30px;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 30px rgba(0, 255, 252, 0.2);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e2e8f0;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experiencia-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 45%,
+    var(--neon-primary) 50%,
+    transparent 55%
+  );
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: all 0.6s;
 }
 
 .experiencia-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 0 50px rgba(0, 255, 252, 0.4);
 }
 
+.experiencia-card:hover::before {
+  animation: shine 1.5s;
+}
+
+@keyframes shine {
+  0% { opacity: 0; left: -50%; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0; left: 150%; }
+}
+
+/* Texto con efecto neón */
 .experiencia-card h3 {
-  color: #343a48;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  color:#4b4b4e;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: var(--text-glow);
+  position: relative;
+  display: inline-block;
+}
+
+.experiencia-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background: var(--neon-secondary);
+  box-shadow: 0 0 10px var(--neon-secondary);
 }
 
 .experiencia-card p {
-  color: #4a5568;
+  color: #c9c9d2;
   line-height: 1.6;
+  font-size: 1.1rem;
 }
 
+/* Efecto de partículas */
+.particle-effect {
+  position: absolute;
+ 
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+/* Media Queries para responsividad */
 @media (max-width: 768px) {
-  .sobre-mi-content {
-    padding: 2rem 1.5rem;
-    width: 95%;
+  .sobre-mi-container h1 {
+    font-size: 2rem;
   }
   
-  h1 {
-    font-size: 2.2rem;
+  .sobre-mi-container h2 {
+    font-size: 1.5rem;
   }
   
-  h2 {
-    font-size: 1.8rem;
-  }
-  
-  .bio-text {
-    font-size: 1.1rem;
+  .avatar-img {
+    width: 120px;
+    height: 120px;
   }
   
   .experiencia-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-mi-page {
+    padding: 1rem;
+  }
+  
+  .sobre-mi-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .bio-text {
+    font-size: 0.9rem;
+  }
+  
+  .experiencia-card {
+    padding: 1.5rem;
+  }
+  
+  .experiencia-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .experiencia-card p {
+    font-size: 1rem;
   }
 }
