@@ -1,6 +1,6 @@
 import '../styles/header.css';
 import { Link } from 'react-router-dom';
-import userIcon from '../assets/img/agregar-usuario.png'; // Asegúrate de que la ruta sea correcta
+import userIcon from '../assets/img/agregar-usuario.png';
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
       </nav>
       
       <div className="auth-links">
-        <Link to="/acceder" className="auth-link">
+        <Link to="/login" className="auth-link"> {/* Cambiado de "/acceder" a "/login" */}
           <img src={userIcon} alt="Icono de usuario" className="user-icon" />
           Acceder
         </Link>
