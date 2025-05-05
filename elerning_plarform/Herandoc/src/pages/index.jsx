@@ -1,5 +1,5 @@
 //import backgroundHero from '../assets/img/backgroundherandoc.webp';
-import '../styles/home.css';
+import '../styles/index.css';
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
           <h1>Bienvenido a HeránDoc</h1>
           <p>Formación para el desarrollo web</p>
         </div>
+        
       </div>
     
   );
