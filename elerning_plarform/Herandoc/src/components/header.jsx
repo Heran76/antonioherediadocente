@@ -7,7 +7,7 @@ export default function Header() {
     <header className="main-header">
       <nav className="main-nav">
         <Link to="/">Inicio</Link>
-        <Link to="/academia">Academia</Link>
+        <Link to="/academia">Academias</Link>
         <Link to="/sobre-mi">Sobre mí</Link>
         <Link to="/contacto">Contacto</Link>
       </nav>
