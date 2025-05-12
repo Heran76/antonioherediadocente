@@ -31,7 +31,9 @@ body{
   .hero-content {
     position: relative;
     z-index: 1;
-    color: rgb(98, 96, 93);
+    background: linear-gradient(rgb(255, 225, 0),rgb(0, 34, 255));
+  -webkit-background-clip: text;
+  color: transparent; 
     text-align: center;
     display: flex;
     flex-direction: column;
