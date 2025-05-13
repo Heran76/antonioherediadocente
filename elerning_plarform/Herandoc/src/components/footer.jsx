@@ -7,7 +7,7 @@ export default function Footer() {
         ©Todos los derechos reservados Heran76. 2025
       </div>
       <nav className="footer-nav">
-        <a href="/politica-privacidad">Políticas de privacidad</a>
+        <a href="/politica-privacidad">Política de privacidad</a>
         <a href="/cookies">Cookies</a>
       </nav>
     </footer>
