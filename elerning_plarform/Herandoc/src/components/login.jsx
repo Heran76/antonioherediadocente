@@ -22,7 +22,7 @@ export default function Login() {
         type="email" 
         value={email} 
         onChange={(e) => setEmail(e.target.value)} 
-        placeholder="Correoo electrónico" 
+        placeholder="Correo electrónico" 
       />
       <input 
         type="password" 
