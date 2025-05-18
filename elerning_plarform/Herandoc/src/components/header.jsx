@@ -7,9 +7,9 @@ export default function Header() {
     <header className="main-header">
       <nav className="main-nav">
         <Link to="/">Inicio</Link>
-        <Link to="/academia">Academias</Link>
+        <Link to="/academia">Metodología</Link>
         <Link to="/sobre-mi">Sobre mí</Link>
-        <Link to="/contacto">Contacto</Link>
+        <Link to="/contacto">Contactos</Link>
       </nav>
       
       <div className="auth-links">
