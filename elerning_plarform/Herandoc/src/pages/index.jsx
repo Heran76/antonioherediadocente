@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100"> {/* Fondo gris claro en toda la pantalla */}
       <div className="bg-blue-600 p-8 text-white"> {/* Barra superior azul */}
-        <h1 className="text-4xl font-bold">Bienvenido a HeránDoc</h1>
+        <h1 className="text-4xl font-bold">Bienvenido a HeránDoc tu espacio </h1>
         <p className="text-xl mt-2">Formación para el desarrollo web</p>
       </div>
       
