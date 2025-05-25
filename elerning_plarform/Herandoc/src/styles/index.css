@@ -11,7 +11,9 @@ body{
   background-color: linear-gradient(to bottom, rgba(254, 254, 254, 0.875) 0%, rgba(231, 225, 225, 0.759) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(246, 243, 243, 0.025) 50%);
  
 }
-
+  h1{
+    color:#a3b82b
+  }
 .home-page {
     width: 100vw;
     height: 100vh;
@@ -45,14 +47,14 @@ body{
   
   .hero-content h1 {
     font-size: 3.5rem;
-    color:linear-gradient(135deg, #fefeff 0%, #f2f4f570 100%);
+    color:linear-gradient(135deg, #cea02d 0%, #2499d470 100%);
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgba(240, 236, 236, 0.8);
+   
   }
   
   .hero-content p {
     font-size: 1.8rem;
-    text-shadow: 1px 1px 4px rgba(236, 230, 230, 0);
+   
   }
 
 
